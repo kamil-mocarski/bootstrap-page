@@ -51,7 +51,7 @@ nav a {
     text-transform: uppercase;
 }
 
-#aboutus .about {
+.about {
     text-transform: uppercase;
 
 }
@@ -74,6 +74,36 @@ nav a {
 
 #price .price-card {
     height: 50rem;
+    transition: transform .5s;
+}
+
+#price .price-card:hover {
+    transform: scale(110%);
+}
+
+.price-card h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.price-card i {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.price-card .btn {
+    padding: 1rem 2.6rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-color: #6C757D;
+    color: white;
+    transition: background-color .5s;
+}
+
+.price-card .btn:hover {
+    background-color: #0D6EFD;
+
 }
 
 @media(min-width: 992px) {
