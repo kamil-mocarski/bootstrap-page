@@ -6,14 +6,19 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
 }
 
+
+
 /* HEADER */
-.main-header {
+#main-header {
     position: relative;
     width: 100%;
     height: 400px;
@@ -23,15 +28,56 @@ body {
     z-index: 0;
 }
 
-.hero-backdrop {
+.hero-shadow {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
 }
 
-@media (min-width: 992px) {
-    .main-header {
+/* nav */
+nav a {
+    text-transform: uppercase;
+}
+
+/* about us */
+#aboutus p {
+    text-align: justify;
+}
+
+#aboutus a {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#aboutus .about {
+    text-transform: uppercase;
+
+}
+
+#aboutus img {
+    height: 22rem;
+    overflow: hidden;
+}
+
+#aboutus .carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* price */
+#price {
+    background-color: rgba(0, 0, 0, .09);
+}
+
+#price .price-card {
+    height: 50rem;
+}
+
+@media(min-width: 992px) {
+    #main-header {
         background-image: url('./img/el-paso-B.jpg');
     }
 }
