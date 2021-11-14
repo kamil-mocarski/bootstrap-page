@@ -22,6 +22,10 @@ body {
     content: "";
 }
 
+.about {
+    text-transform: uppercase;
+
+}
 
 /* HEADER */
 #main-header {
@@ -57,10 +61,7 @@ nav a {
     text-transform: uppercase;
 }
 
-.about {
-    text-transform: uppercase;
 
-}
 
 #aboutus img {
     height: 22rem;
@@ -133,9 +134,7 @@ nav a {
     #main-header {
         background-image: url('./img/el-paso-B.jpg');
     }
-}
 
-@media(min-width: 984px) {
     .scroll-fix::before {
         display: block;
         margin-top: -3rem;
