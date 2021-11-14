@@ -17,10 +17,9 @@ body {
 
 .scroll-fix::before {
     display: block;
-    margin-top: -3rem;
-    height: 3rem;
+    margin-top: -20rem;
+    height: 20rem;
     content: "";
-
 }
 
 
@@ -133,5 +132,14 @@ nav a {
 @media(min-width: 992px) {
     #main-header {
         background-image: url('./img/el-paso-B.jpg');
+    }
+}
+
+@media(min-width: 984px) {
+    .scroll-fix::before {
+        display: block;
+        margin-top: -3rem;
+        height: 3rem;
+        content: "";
     }
 }
